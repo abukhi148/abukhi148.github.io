@@ -51,12 +51,20 @@ Dear stranger on the internet, you should not......
 Unless you are a recruiter, then:
 
 {{< mermaid >}}
-graph TD;
+graph TD
     A(Have you enjoyed my ramblings?) --> Answer(Very important decision!)
     Answer -->|YES| 1(Proceed to the GREEN dropdown)
     Answer -->|NO| 2(Proceed to the RED dropdown)
     style 1 fill:#195639,color:#fff
     style 2 fill:#6c3039,color:#fff
+{{< /mermaid >}}
+
+{{< mermaid >}}
+graph LR;
+    A[Hard edge] -->|Link text| B(Round edge)
+    B --> C{Decision}
+    C -->|One| D[Result one]
+    C -->|Two| E[Result two]
 {{< /mermaid >}}
 
 {{< admonition type=success title="The only right answer"  open=false >}}

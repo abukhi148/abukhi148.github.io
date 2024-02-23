@@ -393,6 +393,7 @@ disableThemeInject=true
 [mermaid]
     # For values, see https://mermaid.js.org/config/theming.html#available-themes
     themes=[
+        "default",
         "base",
         "dark",
         "forest",
