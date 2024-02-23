@@ -4,6 +4,7 @@ description: My very first blog post
 date: 2023-05-05T12:00:00+02:00
 tags: ["hello", "hugo"]
 categories: ["Misc"]
+mermaid: true
 type: posts
 featuredImagePreview: images/hello-world-preview.jpg
 code:
@@ -50,16 +51,6 @@ Dear stranger on the internet, you should not......
 Unless you are a recruiter, then:
 
 {{< mermaid >}}
-%%{init: {'theme': 'base',
-  'themeVariables': {
-    'primaryColor': '#5827ae',
-    'primaryTextColor': '#fff',
-    'primaryBorderColor': '#fff',
-    'secondaryColor': '#006100',
-    'secondaryBorderColor': '#ffff',
-    'lineColor': '#f8b229',
-    'tertiaryColor': '#ffffff',
-    'fontFamily':'monospace'}}}%%
 graph TD;
     A(Have you enjoyed my ramblings?) --> Answer(Very important decision!)
     Answer -->|YES| 1(Proceed to the GREEN dropdown)
