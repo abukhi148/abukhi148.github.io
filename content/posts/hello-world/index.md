@@ -4,7 +4,6 @@ description: My very first blog post
 date: 2023-05-05T12:00:00+02:00
 tags: ["hello", "hugo"]
 categories: ["Misc"]
-mermaid: true
 type: posts
 featuredImagePreview: images/hello-world-preview.jpg
 code:
@@ -54,22 +53,23 @@ Dear stranger on the internet, you should not......
 Unless you are a recruiter, then:
 
 {{< mermaid >}}
-graph TD
+%%{init: {'theme': 'base',
+  'themeVariables': {
+    'primaryColor': '#5827ae',
+    'primaryTextColor': '#fff',
+    'primaryBorderColor': '#fff',
+    'secondaryColor': '#006100',
+    'secondaryBorderColor': '#ffff',
+    'lineColor': '#f8b229',
+    'tertiaryColor': '#ffffff',
+    'fontFamily':'monospace'}}}%%
+graph TD;
     A(Have you enjoyed my ramblings?) --> Answer(Very important decision!)
     Answer -->|YES| 1(Proceed to the GREEN dropdown)
     Answer -->|NO| 2(Proceed to the RED dropdown)
     style 1 fill:#195639,color:#fff
     style 2 fill:#6c3039,color:#fff
 {{< /mermaid >}}
-
-```mermaid
-graph LR;
-    A[Hard edge] -->|Link text| B(Round edge)
-    B --> C{Decision}
-    C -->|One| D[Result one]
-    C -->|Two| E[Result two]
-```
-
 
 {{< admonition type=success title="The only right answer"  open=false >}}
 You are cool, let's be friends.
@@ -102,6 +102,5 @@ My end goal is achieve that my posts reach such quality, where I give the _impre
 ## Shout-outs
 
 I am basically abysmal at anything related with Frontend, good thing there are amazing people such as [@Lruihao](https://github.com/Lruihao) who has made this amazing, minimal and customizable theme for Hugo. Check out the [Fixlt](https://github.com/hugo-fixit/FixIt) repo if you too are a Frontend potato like myself.
-
 
 [^1]: [Answer to everything](https://en.wikipedia.org/wiki/Phrases_from_The_Hitchhiker%27s_Guide_to_the_Galaxy)
