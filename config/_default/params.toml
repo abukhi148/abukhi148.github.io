@@ -1,11 +1,10 @@
 # Theme Core Configuration
 
 # FixIt theme version
-version="0.2.X"
+version="0.3.2"
 # site description
 description="hugo-blog"
 # site keywords
-#TODO: change keywords
 keywords=[
     "FixIt",
     "Hugo Blog",
@@ -13,8 +12,6 @@ keywords=[
 ]
 # site default theme ["light", "dark", "auto"]
 defaultTheme="auto"
-# public git repo url only then enableGitInfo is true
-gitRepo="https://github.com/abukhi148/abukhi148.github.io"
 # which hash function used for SRI, when empty, no SRI is used
 # ["sha256", "sha384", "sha512", "md5"]
 fingerprint=""
@@ -36,7 +33,15 @@ disableThemeInject=true
     email="abukhari148@proton.me"
     link="https://github.com/abukhi148/"
     avatar="/images/avatar.jpeg"
-    
+
+[gitInfo]
+    repo="https://github.com/abukhi148/abukhi148.github.io"
+    branch="main"
+    # the content directory path relative to the root of the repository
+    dir="content"
+    # the issue template for reporting issue of the posts
+    # available template params: {title} {URL} {sourceURL}
+    issueTpl="title=[BUG]%20{title}&body=|Field|Value|%0A|-|-|%0A|Title|{title}|%0A|URL|{URL}|%0A|Filename|{sourceURL}|"
 # app icon config
 [app]
     # optional site title override for the app when added to an iOS home screen or Android launcher
@@ -299,7 +304,7 @@ disableThemeInject=true
         edit=true
         # the maximum number of lines of displayed code by default
         maxShownLines=10
-        
+
     # Mapbox GL JS config (https://docs.mapbox.com/mapbox-gl-js)
     [page.mapbox]
         # access token of Mapbox GL JS
@@ -393,9 +398,9 @@ disableThemeInject=true
 [mermaid]
     # For values, see https://mermaid.js.org/config/theming.html#available-themes
     themes=[
-        "default",
         "base",
         "dark",
+        "default",
         "forest",
     ]
 

@@ -15,9 +15,9 @@ code:
 **Welcome to my humble blog.**
 <!--more-->
 
-I think it has been made clear but just to make sure everyone is on the same page: 
+I think it has been made clear but just to make sure everyone is on the same page:
 
-> # This is my very first blog post!
+> # This is my very first blog post
 
 Since people from my generation are incapable of communicating properly without the use of memes, I shared with you my very first meme shared on this blog.
 
@@ -26,27 +26,30 @@ Since people from my generation are incapable of communicating properly without 
 {{< /admonition >}}
 
 ## Why would I even start a blog?
+
 I am a very lazy person, writing blog posts in my spare time is not some passion that I just happened to stumble upon.
 
 So why?
 
 {{< admonition type=tip title="TLDR - For those who dislike reading" open=false >}}
+
 1. Improve writing skills
 2. Online portfolio
 3. Improve as a developer
 {{< /admonition >}}
 
-  1. Seeking to improve my communication and documenting abilities. 
+1. Seeking to improve my communication and documenting abilities.
       > It has come to my attention, that I ABSOLUTELY very much at suck at writing documentation. Starting a blog, I will be forcing myself to write and post online in order to improve in the long run.
 
-  2. Using it as an online portfolio
+2. Using it as an online portfolio
       > Pretty much that. Why stop at just making a fool out of myself only among family, friends and at work, when I can do it online as well.
 
-  3. Improving technical skills as a developer
+3. Improving technical skills as a developer
       > Getting roasted and humbled online might as well be the most effective way to improve and I will be putting that to the test.
 
 ## Why should anyone care?
-Dear stranger on the internet, you should not...... 
+
+Dear stranger on the internet, you should not......
 
 Unless you are a recruiter, then:
 
@@ -59,13 +62,14 @@ graph TD
     style 2 fill:#6c3039,color:#fff
 {{< /mermaid >}}
 
-{{< mermaid >}}
-graph LR;
+```mermaid
+graph LR
     A[Hard edge] -->|Link text| B(Round edge)
     B --> C{Decision}
     C -->|One| D[Result one]
     C -->|Two| E[Result two]
-{{< /mermaid >}}
+```
+
 
 {{< admonition type=success title="The only right answer"  open=false >}}
 You are cool, let's be friends.
@@ -78,25 +82,26 @@ Please ignore all everything you have witnessed so far. I pledge on the name of 
 ## Questions that might need explaining?
 
 ### Copy Pasta Connoisseur?
+
 Every developer has copied and pasted code from the very first result they get after searching on Google, on autopilot mode. Those who deny it are either not entirely truthful or are gods among us mortals, who can probably write, speak and dream in machine code.
 
-My end goal is achieve that my posts reach such quality, where I give the *impression* that the code can be copy pasta'd, without any thought.  
+My end goal is achieve that my posts reach such quality, where I give the _impression_ that the code can be copy pasta'd, without any thought.  
 
-> *Understanding one's code is for newbies, only the most valiant souls copy-paste code directly into production*. 
-> 
+> _Understanding one's code is for newbies, only the most valiant souls copy-paste code directly into production_.
+>
 > *Most likely in the coming 5 years or less Chatgpt-42[^1] will have eradicated all humanity.*
 
 ### What is this weird sense humor?
-- Is it supposed to be funny? 
+
+- Is it supposed to be funny?
   > Not really ಥ_ಥ
 
 - Then why?
-  > I want to enjoy myself while writing these posts. I would like to think that any poor soul that has the misfortune to stumble here at least finds my antics entertaining. And hopefully is either impressed *(highly unlikely)* or faints after seeing my non-spaghetti code *(most likely)*. 
-
+  > I want to enjoy myself while writing these posts. I would like to think that any poor soul that has the misfortune to stumble here at least finds my antics entertaining. And hopefully is either impressed _(highly unlikely)_ or faints after seeing my non-spaghetti code _(most likely)_.
 
 ## Shout-outs
+
 I am basically abysmal at anything related with Frontend, good thing there are amazing people such as [@Lruihao](https://github.com/Lruihao) who has made this amazing, minimal and customizable theme for Hugo. Check out the [Fixlt](https://github.com/hugo-fixit/FixIt) repo if you too are a Frontend potato like myself.
 
-[comment]: <> (Foot Notes)
 
 [^1]: [Answer to everything](https://en.wikipedia.org/wiki/Phrases_from_The_Hitchhiker%27s_Guide_to_the_Galaxy)
