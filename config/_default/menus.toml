@@ -1,0 +1,63 @@
+# Menu Configuration
+
+[[main]]
+    identifier="posts"
+    pre=""
+    post=""
+    name="Posts"
+    url="/posts/"
+    title="All my infatuating posts"
+    weight=1
+    [main.params]
+        animate=false
+        class=""
+        draft=false
+        icon="fa-solid fa-box-archive fa-lg"
+        type=[
+            "desktop",
+            "mobile",
+        ]
+
+[[main]]
+    identifier="categories"
+    pre=""
+    post=""
+    name="Categories"
+    url="/categories/"
+    title=""
+    weight=2
+    [main.params]
+        icon="fa-solid fa-th fa-lg"
+
+[[main]]
+    identifier="favorites"
+    pre=""
+    post=""
+    name="Favorites"
+    url="/favorites/"
+    title=""
+    weight=3
+    [main.params]
+        icon="fa-solid fa-bookmark"
+
+[[main]]
+    identifier="tags"
+    pre=""
+    post=""
+    name="Tags"
+    url="/tags/"
+    title=""
+    weight=4
+    [main.params]
+        icon="fa-solid fa-tags fa-lg"
+
+[[main]]
+    identifier="about"
+    pre=""
+    post=""
+    name="About"
+    url="/about/"
+    title=""
+    weight=5
+    [main.params]
+        icon="fa-solid fa-person-falling-burst fa-lg"

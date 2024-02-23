@@ -1,0 +1,16 @@
+# Hugo Configuration
+
+title = "Copy Pasta with Ali"
+baseURL = "https://abukhi148.github.io/"
+theme = "FixIt"
+defaultContentLanguage = "en"
+languageCode = "en"
+enableRobotsTXT = true
+enableEmoji = true
+enableGitInfo = true
+relativeURLs = false
+buildDrafts = false
+summaryLength = 150
+enableInlineShortcodes = true
+# ignore some build errors
+ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]

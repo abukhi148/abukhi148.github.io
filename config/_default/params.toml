@@ -1,0 +1,539 @@
+# Theme Core Configuration
+
+# FixIt theme version
+version="0.2.X"
+# site description
+description="hugo-blog"
+# site keywords
+#TODO: change keywords
+keywords=[
+    "FixIt",
+    "Hugo Blog",
+    "Hugo",
+]
+# site default theme ["light", "dark", "auto"]
+defaultTheme="auto"
+# public git repo url only then enableGitInfo is true
+gitRepo="https://github.com/abukhi148/abukhi148.github.io"
+# which hash function used for SRI, when empty, no SRI is used
+# ["sha256", "sha384", "sha512", "md5"]
+fingerprint=""
+# date format
+dateFormat="02-01-2006"
+# website images for Open Graph and Twitter Cards
+images=[
+]
+# enable PWA
+enablePWA=true
+# whether to add external Icon for external links automatically
+externalIcon=true
+# inject a theme meta tag in the HTML head on the home page only.
+disableThemeInject=true
+
+# Author Configuration
+[author]
+    name="Ali"
+    email="abukhari148@proton.me"
+    link="https://github.com/abukhi148/"
+    avatar="/images/avatar.jpeg"
+    
+# app icon config
+[app]
+    # optional site title override for the app when added to an iOS home screen or Android launcher
+    title="Copy Pasta with Ali"
+    # whether to omit favicon resource links
+    noFavicon=false
+    # modern SVG favicon to use in place of older style .png and .ico files
+    svgFavicon=""
+    # Safari mask icon color
+    iconColor="#5bbad5"
+    # windows v8-10 tile color
+    tileColor="#192743"
+    # CHANGED Android browser theme color
+    [app.themeColor]
+        light="#f8f8f8"
+        dark="#252627"
+
+# search config
+[search]
+    enable=true
+    # type of search engine ["lunr", "algolia", "fuse"]
+    type="lunr"
+    # max index length of the chunked content
+    contentLength=4000
+    # placeholder of the search bar
+    placeholder=""
+    # max number of results length
+    maxResultLength=10
+    # snippet length of the result
+    snippetLength=30
+    # HTML tag name of the highlight part in results
+    highlightTag="em"
+    # whether to use the absolute URL based on the baseURL in search index
+    absoluteURL=false
+    [search.algolia]
+        index=""
+        appID=""
+        searchKey=""
+    [search.fuse]
+        # https://fusejs.io/api/options.html
+        isCaseSensitive=false
+        minMatchCharLength=2
+        findAllMatches=false
+        location=0
+        threshold=0.3
+        distance=100
+        ignoreLocation=false
+        useExtendedSearch=false
+        ignoreFieldNorm=false
+
+# Header config
+[header]
+    # desktop header mode ["sticky", "normal", "auto"]
+    desktopMode="sticky"
+    # mobile header mode ["sticky", "normal", "auto"]
+    mobileMode="auto"
+    # header title config
+    [header.title]
+        # URL of the LOGO
+        logo="/images/pixel_pc.jpg"
+        # title name
+        name="Copy Pasta Connoisseur"
+        # you can add extra information before the name (HTML format is supported), such as icons
+        pre=""
+        # you can add extra information after the name (HTML format is supported), such as icons
+        post=""
+        # whether to use typeit animation for title name
+        typeit=false
+    # header subtitle config
+    [header.subtitle]
+        # subtitle name
+        name=""
+        # whether to use typeit animation for subtitle name
+        typeit=false
+
+# breadcrumb config
+[breadcrumb]
+    enable=false
+    sticky=false
+    showHome=false
+
+# footer config
+[footer]
+    enable=true
+    # custom content (HTML format is supported)
+    # for advanced use, see parameter `params.customFilePath.footer`
+    custom=""
+    # whether to show Hugo and theme info
+    hugo=true
+    # whether to show copyright info
+    copyright=true
+    # whether to show the author
+    author=true
+    # site creation year
+    since=2023
+    # whether to show total word count of site content
+    wordCount=true
+    # site creation time
+    [footer.siteTime]
+        enable=true
+        animate=true
+        icon="fa-solid fa-heartbeat"
+        pre="UpTime"
+        value="2023-05-05T00:00:00-02:00"
+    # footer lines order, optional values: ["first", 0, 1, 2, 3, 4, 5, "last"]
+    [footer.order]
+        powered=0
+        copyright=0
+        statistics="first"
+        visitor=0
+        beian=0
+
+# section (all posts) page config
+[section]
+    # special amount of posts in each section page
+    paginate=20
+    # date format (month and day)
+    dateFormat="02-01"
+    # amount of RSS pages
+    rss=10
+    # recently updated posts settings
+    [section.recentlyUpdated]
+        enable=true
+        rss=true
+        days=30
+        maxCount=10
+
+# list (category or tag) page config
+[list]
+    # special amount of posts in each list page
+    paginate=20
+    # date format (month and day)
+    dateFormat="02-01"
+    # amount of RSS pages
+    rss=10
+
+# tagCloud config for tags page
+[tagcloud]
+    enable=true
+    min=25         # Minimum font size in px
+    max=27         # Maximum font size in px
+    peakCount=10   # Maximum count of posts per tag
+    orderby="name" # Order of tags, optional values: ["name", "count"]
+
+# Home page config
+[home]
+    # amount of RSS pages
+    rss=10
+    # home page profile
+    [home.profile]
+        enable=true
+        # gravatar Email for preferred avatar in home page
+        gravatarEmail=""
+        # URL of avatar shown in home page
+        avatarURL="/images/avatar.jpeg"
+        # identifier of avatar menu link
+        avatarMenu="about"
+        # title shown in home page (HTML format is supported)
+        title=""
+        # subtitle shown in home page
+        subtitle="How long does a loop last? For a while (⌐■_■)"
+        # whether to use typeit animation for subtitle
+        typeit=true
+        # whether to show social links
+        social=true
+        # disclaimer (HTML format is supported)
+        disclaimer=""
+    # Home page posts
+    [home.posts]
+        enable=true
+        # special amount of posts in each home posts page
+        paginate=10
+
+# social config about the author
+[social]
+    GitHub="abukhi148"
+    Linkedin="ali-bukhari-675321184"
+    Email="abukhari148@proton.me"
+    Devpost="Hawkeye148"
+
+# page config
+[page]
+    # whether to enable the author's avatar of the post
+    authorAvatar=true
+    # whether to hide a page from home page
+    hiddenFromHomePage=false
+    # whether to hide a page from search results
+    hiddenFromSearch=false
+    # whether to enable twemoji
+    twemoji=false
+    # whether to enable lightgallery
+    lightgallery=false
+    # whether to enable the ruby extended syntax
+    ruby=true
+    # whether to enable the fraction extended syntax
+    fraction=true
+    # whether to enable the fontawesome extended syntax
+    fontawesome=true
+    # license info (HTML format is supported)
+    license='<a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+    # whether to show link to Raw Markdown content of the content
+    linkToMarkdown=true
+    # whether to show the full text content in RSS
+    rssFullText=false
+    # Page style ["narrow", "normal", "wide", ...]
+    pageStyle="wide"
+    # Auto Bookmark Support
+    # If true, save the reading progress when closing the page.
+    autoBookmark=false
+    # whether to enable wordCount
+    wordCount=true
+    # whether to enable readingTime
+    readingTime=true
+    # end of post flag
+    endFlag=""
+    # whether to enable instant.page
+    instantPage=false
+
+    # repost config
+    [page.repost]
+        enable=false
+        url=""
+    # table of the contents config
+    [page.toc]
+        # whether to enable the table of the contents
+        enable=true
+        # whether to keep the static table of the contents in front of the post
+        keepStatic=false
+        # whether to make the table of the contents in the sidebar automatically collapsed
+        auto=true
+        # position of TOC ["left", "right"]
+        position="left"
+    # display a message at the beginning of an article to warn the reader that its content might be expired
+    [page.expirationReminder]
+        enable=false
+        # Display the reminder if the last modified time is more than 90 days ago
+        reminder=90
+        # Display warning if the last modified time is more than 180 days ago
+        warning=180
+        # If the article expires, close the comment or not
+        closeComment=false
+    # FixIt 0.2.16 | CHANGED KaTeX mathematical formulas (https://katex.org)
+    [page.math]
+        enable=true
+        # default inline delimiter is $ ... $ and \( ... \)
+        inlineLeftDelimiter=""
+        inlineRightDelimiter=""
+        # default block delimiter is $$ ... $$, \[ ... \], \begin{equation} ... \end{equation} and some other functions
+        blockLeftDelimiter=""
+        blockRightDelimiter=""
+        # KaTeX extension copy_tex
+        copyTex=true
+        # KaTeX extension mhchem
+        mhchem=true
+    # code config
+    [page.code]
+        # whether to show the copy button of the code block
+        copy=true
+        # whether to show the edit button of the code block
+        edit=true
+        # the maximum number of lines of displayed code by default
+        maxShownLines=10
+        
+    # Mapbox GL JS config (https://docs.mapbox.com/mapbox-gl-js)
+    [page.mapbox]
+        # access token of Mapbox GL JS
+        accessToken=""
+        # style for the light theme
+        lightStyle="mapbox://styles/mapbox/light-v9"
+        # style for the dark theme
+        darkStyle="mapbox://styles/mapbox/dark-v9"
+        # whether to add NavigationControl
+        navigation=true
+        # whether to add GeolocateControl
+        geolocate=true
+        # whether to add ScaleControl
+        scale=true
+        # whether to add FullscreenControl
+        fullscreen=true
+    # Donate (Sponsor) settings
+    [page.reward]
+        enable=false
+        animation=false
+        # position relative to post footer, optional values: ["before", "after"]
+        position="after"
+        # comment = "Buy me a coffee"
+        # display mode of QR code images, optional values: ["static", "fixed"], default: `static`
+        mode="static"
+        [page.reward.ways]
+# wechatpay = "/images/wechatpay.png"
+# alipay = "/images/alipay.png"
+# paypal = "/images/paypal.png"
+# bitcoin = "/images/bitcoin.png"
+[page.share]
+    enable=false
+    Linkedin=true
+    HackerNews=true
+#TODO: enable gittalk
+[page.comment]
+    enable=true
+    [page.comment.giscus]
+        enable=true
+        repo="abukhi148/abukhi148.github.io"
+        repoId="R_kgDOJgRGIQ"
+        category="Announcements"
+        categoryId="DIC_kwDOJgRGIc4CYEJH"
+        mapping="title"
+        strict="0"                           # FixIt NEW | 0.2.18
+        term=""
+        reactionsEnabled="1"
+        emitMetadata="0"
+        inputPosition="bottom"               # ["top", "bottom"]
+        lightTheme="light"
+        darkTheme="dark_dimmed"
+        lazyLoad=true
+
+# Third-party library config
+[page.library]
+    [page.library.css]
+    # someCSS = "some.css"
+    # located in "assets/"
+    # Or
+    # someCSS = "https://cdn.example.com/some.css"
+    [page.library.js]
+        # someJavascript = "some.js"
+        # located in "assets/"
+        # Or
+        # someJavascript = "https://cdn.example.com/some.js"
+
+# CHANGED Page SEO config
+[page.seo]
+    # image URL
+    images=[
+    ]
+    # Publisher info
+    [page.seo.publisher]
+        name=""
+        logoUrl=""
+
+# TypeIt config
+[typeit]
+    # typing speed between each step (measured in milliseconds)
+    speed=100
+    # blinking speed of the cursor (measured in milliseconds)
+    cursorSpeed=1000
+    # character used for the cursor (HTML format is supported)
+    cursorChar="|"
+    # cursor duration after typing finishing (measured in milliseconds, "-1" means unlimited)
+    duration=-1
+    # FixIt 0.2.18 | NEW whether your strings will continuously loop after completing
+    loop=false
+
+# Mermaid config
+[mermaid]
+    # For values, see https://mermaid.js.org/config/theming.html#available-themes
+    themes=[
+        "base",
+        "dark",
+        "forest",
+    ]
+
+# PanguJS config
+[pangu]
+    # For Chinese writing
+    enable=false
+    selector="article"
+
+# Watermark config
+# Detail config see https://github.com/Lruihao/watermark#readme
+[watermark]
+    enable=false
+    # watermark's text (HTML format is supported)
+    content=""
+    # watermark's transparency
+    opacity=0.1
+    # parent of watermark's container
+    appendTo=".wrapper>main"
+    # watermark's width. unit: px
+    width=150
+    # watermark's height. unit: px
+    height=20
+    # row spacing of watermarks. unit: px
+    rowSpacing=60
+    # col spacing of watermarks. unit: px
+    colSpacing=30
+    # watermark's tangent angle. unit: deg
+    rotate=15
+    # watermark's fontSize. unit: rem
+    fontSize=0.85
+    # FixIt 0.2.13 | NEW watermark's fontFamily
+    fontFamily="inherit"
+
+# FixIt 0.2.12 | NEW Busuanzi count
+[ibruce]
+    enable=false
+    # Enable in post meta
+    enablePost=false
+
+# Site verification code config for Google/Bing/Yandex/Pinterest/Baidu/360/Sogou
+[verification]
+    google=""
+    bing=""
+
+# Site SEO config
+[seo]
+    # image URL
+    image=""
+    # thumbnail URL
+    thumbnailUrl=""
+
+# Analytics config
+[analytics]
+    enable=true
+    [analytics.google]
+        id="G-FW9MEG5ZMH"
+        anonymizeIP=false
+
+# Cookie consent config
+[cookieconsent]
+    enable=true
+    # text strings used for Cookie consent banner
+    [cookieconsent.content]
+        message=""
+        dismiss=""
+        link=""
+
+# CHANGED CDN config for third-party library files
+[cdn]
+
+# Compatibility config
+[compatibility]
+    # whether to use Polyfill.io to be compatible with older browsers
+    polyfill=false
+    # whether to use object-fit-images to be compatible with older browsers
+    objectFit=false
+
+# GitHub banner in the top-right or top-left corner
+[githubCorner]
+    enable=true
+    permalink="https://github.com/abukhi148/abukhi148.github.io/"
+    title="View source on GitHub"
+    position="left"                                               # ["left", "right"]
+
+# Gravatar config
+[gravatar]
+    # FixIt 0.2.18 | NEW Depends on the author's email, if the author's email is not set, the local avatar will be used
+    enable=false
+    # Gravatar host, default: "www.gravatar.com"
+    host="gravatar.loli.net" # ["cn.gravatar.com", "gravatar.loli.net", ...]
+    style=""                 # ["", "mp", "identicon", "monsterid", "wavatar", "retro", "blank", "robohash"]
+
+# Back to top
+[backToTop]
+    enable=true
+    # Scroll percent label in b2t button
+    scrollpercent=true
+
+# Reading progress bar
+[readingProgress]
+    enable=true
+    # Available values: ["left", "right"]
+    start="left"
+    # Available values: ["top", "bottom"]
+    position="top"
+    reversed=false
+    light=""
+    dark=""
+    height="2px"
+
+# Progress bar in the top during page loading.
+# For more information: https://github.com/CodeByZach/pace
+[pace]
+    enable=true
+    # All available colors:
+    # ["black", "blue", "green", "orange", "pink", "purple", "red", "silver", "white", "yellow"]
+    color="purple"
+    # All available themes:
+    # ["barber-shop", "big-counter", "bounce", "center-atom", "center-circle", "center-radar", "center-simple",
+    # "corner-indicator", "fill-left", "flash", "flat-top", "loading-bar", "mac-osx", "material", "minimal"]
+    theme="minimal"
+
+# Define custom file paths
+# Create your custom files in site directory `layouts/partials/custom` and uncomment needed files below
+[customFilePath]
+    # aside = "custom/aside.html"
+    profile="custom/profile.html"
+
+
+# Developer options
+[dev]
+    enable=false
+    # Check for updates
+    c4u=false
+    # Please do not expose to public!
+    githubToken=""
+    # Mobile Devtools config
+    [dev.mDevtools]
+        enable=false
+        # "vConsole", "eruda" supported
+        type="vConsole"

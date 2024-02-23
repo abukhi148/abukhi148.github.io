@@ -1,0 +1,31 @@
+# 001: Github
+github:
+  Weight: 1
+  Prefix: https://github.com/
+  Title: GitHub
+  Icon:
+    Class: fa-brands fa-github-alt fa-fw
+
+# 002: LinkedIn
+linkedin:
+  Weight: 2
+  Prefix: https://linkedin.com/in/
+  Title: LinkedIn
+  Icon:
+    Class: fa-brands fa-linkedin fa-fw
+
+# 003: Devpost
+devpost:
+  Weight: 3
+  Title: Devpost
+  Prefix: https://devpost.com/
+  Icon:
+    Class: fa-brands fa-dev
+
+# 004: Email
+email:
+  Weight: 4
+  Template: mailto:%v
+  Title: Email
+  Icon:
+    Class: fa-regular fa-envelope fa-fw

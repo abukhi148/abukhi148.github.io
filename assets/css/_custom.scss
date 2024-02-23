@@ -1,0 +1,28 @@
+.home {
+    .profile-ghchart {
+        width: 100%;
+        background: #473165;
+    }
+
+    &.posts .summary .content {
+        display: block;
+    }
+}
+
+.content {
+    text-align: justify;
+}
+
+.single {
+    .single-subtitle {
+        color: #bd93f9;
+    }
+    .content {
+        background-image: linear-gradient(90deg, rgba(60, 10, 30, .04) 3%, transparent 0), linear-gradient(1turn, rgba(60, 10, 30, .04) 3%, transparent 0);
+        background-size: 20px 20px;
+        background-position: center;
+        [data-theme='dark'] & {
+            background-image: linear-gradient(90deg, rgba(195, 245, 215, .04) 3%, transparent 0), linear-gradient(1turn, rgba(195, 245, 215, .04) 3%, transparent 0);
+        }
+    }
+}

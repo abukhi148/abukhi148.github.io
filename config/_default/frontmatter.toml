@@ -1,0 +1,3 @@
+# Front Matter Configuration
+
+lastmod = ["lastmod", ":git", ":fileModTime", ":defalut"]

@@ -1,0 +1,7 @@
+# The sponsor log data format is as follows
+
+- date: "2006-01-02 15:04:05"
+  sponsor: Cell
+  amount: ¥50
+  origin: alipay # [alipay, bitcoin, paypal, wechatpay, ...]
+  remark: "Come on!"

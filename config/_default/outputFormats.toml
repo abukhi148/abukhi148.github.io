@@ -1,0 +1,7 @@
+# Output Format Definitions
+
+# Options to make output .md files
+[MarkDown]
+  mediaType = "text/markdown"
+  isPlainText = true
+  isHTML = false

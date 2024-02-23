@@ -1,0 +1,8 @@
+# Customizing Output Formats
+
+# Options to make hugo output files
+home = ["HTML", "RSS", "JSON"]
+page = ["HTML", "MarkDown"]
+section = ["HTML", "RSS"]
+taxonomy = ["HTML", "RSS"]
+taxonomyTerm = ["HTML"]
