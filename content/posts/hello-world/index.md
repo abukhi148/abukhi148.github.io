@@ -63,7 +63,7 @@ graph TD
 {{< /mermaid >}}
 
 ```mermaid
-graph LR
+graph LR;
     A[Hard edge] -->|Link text| B(Round edge)
     B --> C{Decision}
     C -->|One| D[Result one]
